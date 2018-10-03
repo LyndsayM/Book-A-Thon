@@ -1,3 +1,20 @@
-body{
-background: blue;
+nav{
+background: grey;
+
 }
+body{
+    padding: 20px;
+    color: black;
+}
+
+ul li a{
+    color:white
+  }
+  
+  .navbar-brand{ 
+    color:white
+  }
+
+  footer{
+background: grey;
+  }

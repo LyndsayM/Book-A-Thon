@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,12 +8,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
     <body>
-        <h1>Welcome to the Read-A-Thon</h1>
+      <!--Navigation Bar  -->     
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+           <div class="navbar-header">                     
+            <a class="navbar-brand" href="#" id="mybrand">The Book-A-Thon</a>
+          </div>
+        
+         <ul class="nav navbar-nav navbar-dark navbar-right">
+             <li class="active"><a href="#home"> Home </a></li>
+             <li><a href="#contact"> Contact </a></li>
+             <li><a href="#register"> Register </a></li>
+             <li><a class="active" href="#about"> About </a></li>
+           
+          </ul>
+          </div>
+        </nav>
+<!-- Header -->
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1>Welcome to the Book-A-Thon!</h1>
+                    <button type="button" class="btn btn-success">Register!</button>
+                </div>    
+            </div>
+        </div>
+      </header>
+
+    <div class= "container-fluid">
+      <div id="info">  
+      <p>The purpose of the Book-A-Thon is...The man sprang from his chair and paced up and down the room in uncontrollable agitation. Then, with a gesture of desperation, he tore the mask from his face and hurled it upon the ground. "You are right," he cried; "I am the King. Why should I attempt to conceal it?" "Why, indeed?" murmured Holmes. "Your Majesty had not spoken before I was aware that I was addressing Wilhelm Gottsreich Sigismond von Ormstein, Grand Duke of Cassel-Felstein, and hereditary King of Bohemia."</p>
+        <hr>
+</div>
+        <div class="row">
+          <div class="col-sm-4">
+                <h3>Great Books to Read</h3>
+                <p>"'No' says he, 'not exactly in the business, but I 'ave made pets of several.' And with that he lifts his 'at as perlite as a lord, and walks away. Old Bersicker kep' a-lookin' arter 'im till 'e was out of sight, and then went and lay down in a corner and wouldn't come hout the 'ole hevening. Well, larst night, so soon as the moon was hup, the wolves here all began a-'owling. There warn't nothing for them to 'owl at. There warn't no one near, except some one that was evidently a-callin' a dog somewheres out back of the gardings in the Park road. Once or twice I went out to see that all was right, and it was, and then the 'owling stopped. Just before twelve o'clock I just took a look round afore turnin' in, an', bust me, but when I kem opposite to old Bersicker's cage I see the rails broken and twisted about and the cage empty. And that's all I know for certing."</p>
+                <!-- https://litipsum.com/ -->
+            </div>
+           <div class="col-sm-2"></div> 
+          <div class="col-sm-6">
+                    <h3>What to read next</h3>
+                    <!-- script generated from Google Books; placeholder, we want to customize something for this project -->
+                    <script type="text/javascript" src="//books.google.com/books/previewlib.js"></script>
+                    <script type="text/javascript">
+                    GBS_insertEmbeddedViewer('ISBN:0738531367',600,500);
+                    </script>
+            </div>   
+             </div>   
+<footer>
+  <div class="row">
+    <div class="col-sm-4">Contact</div>
+    <div class="col-sm-4">Send us an Email</div>
+    <div class="col-sm-4">Follow Us</div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="#"> Nucamp class 2018</a>
+    </div>
+    <!-- Copyright -->
+</footer>       
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/tether/dist/js/tether.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>        
-    </body>
+</body>
 </html>
