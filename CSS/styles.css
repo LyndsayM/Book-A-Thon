@@ -1,20 +1,26 @@
-nav{
-background: grey;
 
+
+.jumbotron {
+  background: url(../img/fabiola-penalba-620734-unsplash.jpg);
+ background-attachment: fluid;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 400px;
 }
+
 body{
-    padding: 20px;
-    color: black;
+  padding: 50px;
+  margin: 50px;
+
 }
 
-ul li a{
-    color:white
-  }
-  
-  .navbar-brand{ 
-    color:white
-  }
-
-  footer{
-background: grey;
-  }
+.footer{
+background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+position: fixed;
+text-align: center;
+margin: 0;
+padding: 0;
+}

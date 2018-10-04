@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Book-A-Thon</title>
+        <title>Read-A-Thon</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
@@ -11,34 +11,44 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
     <body>
-      <!--Navigation Bar  -->     
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
-           <div class="navbar-header">                     
-            <a class="navbar-brand" href="#" id="mybrand">The Book-A-Thon</a>
-          </div>
+      <!--Navigation Bar  --> 
+      <div class="container">
+            <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-md navbar-dark bg-dark">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">Read-A-Thon</a>
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>
+            </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Register or Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-warning" href="#" role="button">Donate</a>
+                </li>
+              </ul>
+            </nav>
         
-         <ul class="nav navbar-nav navbar-dark navbar-right">
-             <li class="active"><a href="#home"> Home </a></li>
-             <li><a href="#contact"> Contact </a></li>
-             <li><a href="#register"> Register </a></li>
-             <li><a class="active" href="#about"> About </a></li>
-           
-          </ul>
-          </div>
-        </nav>
 <!-- Header -->
-    <header class="jumbotron">
-        <div class="container">
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
             <div class="row row-header">
-                <div class="col-12">
-                    <h1>Welcome to the Book-A-Thon!</h1>
+                <div class="col-12 text-center">
+                            
+                    <h1>Welcome to the Read-A-Thon!</h1>
                     <button type="button" class="btn btn-success">Register!</button>
                 </div>    
             </div>
         </div>
       </header>
-
+<!-- Main -->
     <div class= "container-fluid">
       <div id="info">  
       <p>The purpose of the Book-A-Thon is...The man sprang from his chair and paced up and down the room in uncontrollable agitation. Then, with a gesture of desperation, he tore the mask from his face and hurled it upon the ground. "You are right," he cried; "I am the King. Why should I attempt to conceal it?" "Why, indeed?" murmured Holmes. "Your Majesty had not spoken before I was aware that I was addressing Wilhelm Gottsreich Sigismond von Ormstein, Grand Duke of Cassel-Felstein, and hereditary King of Bohemia."</p>
@@ -46,7 +56,7 @@
 </div>
         <div class="row">
           <div class="col-sm-4">
-                <h3>Great Books to Read</h3>
+                <h3><a href="https://www.amazon.com/b?ie=UTF8&node=9660210011">Great Books to Read</a></h3>
                 <p>"'No' says he, 'not exactly in the business, but I 'ave made pets of several.' And with that he lifts his 'at as perlite as a lord, and walks away. Old Bersicker kep' a-lookin' arter 'im till 'e was out of sight, and then went and lay down in a corner and wouldn't come hout the 'ole hevening. Well, larst night, so soon as the moon was hup, the wolves here all began a-'owling. There warn't nothing for them to 'owl at. There warn't no one near, except some one that was evidently a-callin' a dog somewheres out back of the gardings in the Park road. Once or twice I went out to see that all was right, and it was, and then the 'owling stopped. Just before twelve o'clock I just took a look round afore turnin' in, an', bust me, but when I kem opposite to old Bersicker's cage I see the rails broken and twisted about and the cage empty. And that's all I know for certing."</p>
                 <!-- https://litipsum.com/ -->
             </div>
@@ -59,20 +69,44 @@
                     GBS_insertEmbeddedViewer('ISBN:0738531367',600,500);
                     </script>
             </div>   
-             </div>   
-<footer>
-  <div class="row">
-    <div class="col-sm-4">Contact</div>
-    <div class="col-sm-4">Send us an Email</div>
-    <div class="col-sm-4">Follow Us</div>
-  </div>
-
-  <!-- Copyright -->
+             </div>  
+             <hr> 
+             <!-- Footer -->
+<div class= footer">
+    <div class="container text-center text-md-left">
+      <!--Footer: contact us  -->
+      <div class="row text-center">
+            <div class="col-xs-6 col-sm-4">
+                <h4><strong>Contact Us</strong></h4>
+                <address>
+                        123 4th Street
+                        Puyallup, WA 98371
+                        <br>
+                        <i class="fa fa-phone fa-sm"></i>+253-555-1212<br>
+                        <i class="fa fa-envelope fa-sm"></i><a href="mailto:readmore@readathon.com">readmore@readathon.com</a>
+                </address>
+            </div>
+    <!-- Footer: Donate -->
+            <div class="col-xs-6 col-sm-4"><h4><strong>Thank You For Your Support!</strong></h4>
+                <a class="btn btn-warning" href="#" role="button">Donate</a>
+            </div>
+            
+            <div class="col-xs-6 col-sm-4">
+                    <div class="text-center">
+     <!--Footer: Social Media  -->
+                        <h4><strong>Follow us!</strong></h4>
+                            <a href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook-square"></i></a>
+                            <a href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:"><i class="fas fa-envelope"></i></a>
+                    </div>
+            </div>
+          </div>
+      <!-- Footer: Copyright -->
   <div class="footer-copyright text-center py-3">© 2018 Copyright:
       <a href="#"> Nucamp class 2018</a>
     </div>
-    <!-- Copyright -->
-</footer>       
+</div>
+</div>       
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/tether/dist/js/tether.min.js"></script>
