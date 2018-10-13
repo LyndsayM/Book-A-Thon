@@ -1,5 +1,5 @@
 .intro-2 {
-    background: url("/img/library.jpg")no-repeat center center;
+    background: url("/img/bookshelf.jpg")no-repeat center center;
     background-size: cover;
     height: 50%;
 }
@@ -9,7 +9,7 @@
 }
 
 .top-nav-collapse {
-    background-color: #4285F4;
+  background-color: #45526e;
 }
 
 @media only screen and (max-width: 768px) {
@@ -30,4 +30,47 @@ h1, h2, h3, h4, h5, h6 {
 
 body{
    font-family: 'Source Sans Pro', sans-serif;  
+}
+
+#loginForm{
+    background-color: white
+}
+
+/*Profile Card*/
+.profile-card{
+    margin-top:20px;
+}
+.profile-card .btn{
+    border-radius:2px;
+    text-transform:uppercase;
+    font-size:12px;
+    padding:7px 20px;
+}
+.profile-card .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    
+}
+.profile-card .card-img-block img{
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.63);
+}
+.profile-card h5{
+    color:#4E5E30;
+    font-weight:600;
+}
+.profile-card p{
+    font-size:14px;
+    font-weight:300;
+}
+.profile-card .btn-primary{
+    background-color:#4E5E30;
+    border-color:#4E5E30;
+}
+
+#bookIcon{
+    margin: auto;    
+    display: block;
 }

@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Book-A-Thon - A Platform that connects fundraising and education.</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -24,7 +26,7 @@
   <header>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar animated fadeIn">
-      <a class="navbar-brand fa fa-book" href="#"><strong> Book-a-thon</strong></a>
+      <a class="navbar-brand fas fa-book-reader" href="#"><strong> Book-a-thon</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,15 +49,65 @@
     <div class="view intro-2">
       <div class="full-bg-img">
         <div class="mask rgba-stylish-light flex-center">
-          <div class="container text-center white-text">
+          <div class="container text-center">
             <div class="row row-content">
-              <div class="col-8 flex-last">
-                <h1 class="animated fadeIn slower">Welcome to the Book-A-Thon!</h1>
+              <div class="col-12 col-lg-7">
+                <img src="/img/book.png" alt="Responsive image" id="bookIcon">
+                <h1 class="animated fadeIn slower white-text">Welcome to the Book-A-Thon!</h1>
                 <br>
-                <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-light-green animated fadeIn slow">Login/Register</button>
+                <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-mdb-color d-lg-none">Login</button>
               </div>
-              <div class="col-4 flex-first animated fadeIn slower">
-                <img src="/img/book.png" class="img-fluid" alt="Responsive image">
+              <div class="col-5 animated fadeIn slower d-none d-lg-block">
+
+                <!-- Default form login -->
+                <form id="loginForm" class="text-center border border-light p-5">
+
+                  <p class="h4 mb-4">Login</p>
+
+                  <!-- Email -->
+                  <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                  <!-- Password -->
+                  <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <!-- Remember me -->
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- Forgot password -->
+                      <a href="">Forgot password?</a>
+                    </div>
+                  </div>
+
+                  <!-- Sign in button -->
+                  <button class="btn btn-mdb-color btn-block my-4" type="submit">Sign in</button>
+
+                  <!-- Register -->
+                  <p>Not a member?
+                    <a href="" data-toggle="modal" data-target="#regModal">Register</a>
+                  </p>
+
+                  <!-- Social login -->
+                  <p>or sign in with:</p>
+
+
+                  <a><i class="fab fa-facebook mx-3 fa-lg"></i></a>
+
+                  <a><i class="fab fa-twitter mx-3 fa-lg"></i></a>
+
+                  <a><i class="fab fa-linkedin mx-3 fa-lg"></i></a>
+
+                  <a><i class="fab fa-github mx-3 fa-lg"></i></a>
+
+
+                </form>
+                <!-- Default form login -->
+
               </div>
             </div>
           </div>
@@ -66,65 +118,62 @@
   </header>
   <!--Main Navigation-->
 
+
   <!-- Login Modal -->
-  <div class="modal fade right" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
-    aria-hidden="true">
+  <div class="modal fade right" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-body">
 
-          <!-- Default form login -->
-          <form class="text-center border border-light p-5">
+<!-- Default form login -->
+<form id="loginForm" class="text-center border border-light p-5">
 
-            <p class="h4 mb-4">Login</p>
+    <p class="h4 mb-4">Login</p>
 
-            <!-- Email -->
-            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+    <!-- Email -->
+    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-            <!-- Password -->
-            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+    <!-- Password -->
+    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
 
-            <div class="d-flex justify-content-around">
-              <div>
-                <!-- Remember me -->
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                  <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
-                </div>
-              </div>
-              <div>
-                <!-- Forgot password -->
-                <a href="">Forgot password?</a>
-              </div>
-            </div>
+    <div class="d-flex justify-content-around">
+      <div>
+        <!-- Remember me -->
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+          <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+        </div>
+      </div>
+      <div>
+        <!-- Forgot password -->
+        <a href="">Forgot password?</a>
+      </div>
+    </div>
 
-            <!-- Sign in button -->
-            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+    <!-- Sign in button -->
+    <button class="btn btn-mdb-color btn-block my-4" type="submit">Sign in</button>
 
-            <!-- Register -->
-            <p>Not a member?
-              <a href="" data-toggle="modal" data-target="#regModal">Register</a>
-            </p>
+    <!-- Register -->
+    <p>Not a member?
+      <a href="" data-toggle="modal" data-target="#regModal">Register</a>
+    </p>
 
-            <!-- Social login -->
-            <p>or sign in with:</p>
+    <!-- Social login -->
+    <p>or sign in with:</p>
 
-            <a type="button" class="light-blue-text mx-3">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a type="button" class="light-blue-text mx-3">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a type="button" class="light-blue-text mx-3">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a type="button" class="light-blue-text mx-3">
-              <i class="fa fa-github"></i>
-            </a>
 
-          </form>
-          <!-- Default form login -->
+    <a><i class="fab fa-facebook mx-3 fa-lg"></i></a>
+
+    <a><i class="fab fa-twitter mx-3 fa-lg"></i></a>
+
+    <a><i class="fab fa-linkedin mx-3 fa-lg"></i></a>
+
+    <a><i class="fab fa-github mx-3 fa-lg"></i></a>
+
+
+  </form>
+  <!-- Default form login -->
 
         </div>
       </div>
@@ -133,95 +182,221 @@
   <!-- Login Modal -->
 
   <!-- Registration Modal -->
-<div class="modal fade down" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
+  <div class="modal fade down" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
           <!-- Default form register -->
-<form class="text-center border border-light p-5">
+          <form class="text-center border border-light p-5">
 
-    <p class="h4 mb-4">Sign Up for the Book-a-thon</p>
+            <p class="h4 mb-4">Sign Up for the Book-a-thon</p>
 
-    <div class="form-row mb-4">
-        <div class="col">
-            <!-- First name -->
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-            <!-- Last name -->
-            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
-        </div>
-    </div>
+            <div class="form-row mb-4">
+              <div class="col">
+                <!-- First name -->
+                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <!-- Last name -->
+                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+              </div>
+            </div>
 
-    <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <!-- E-mail -->
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-    <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-        At least 8 characters and 1 digit
-    </small>
+            <!-- Password -->
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+              aria-describedby="defaultRegisterFormPasswordHelpBlock">
+            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+              At least 8 characters and 1 digit
+            </small>
 
-    <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-        Optional - for two step authentication
-    </small>
+            <!-- Phone number -->
+            <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
+              aria-describedby="defaultRegisterFormPhoneHelpBlock">
+            <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+              Optional - for two step authentication
+            </small>
 
-    <!-- Newsletter -->
-    <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
-    </div>
+            <!-- Newsletter -->
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+              <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+            </div>
 
-    <!-- Sign up button -->
-    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+            <!-- Sign up button -->
+            <button class="btn btn-mdb-color my-4 btn-block" type="submit">Sign in</button>
 
-    <!-- Social register -->
-    <p>or sign up with:</p>
+            <!-- Social register -->
+            <p>or sign up with:</p>
 
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fa fa-facebook"></i>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fa fa-twitter"></i>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fa fa-linkedin"></i>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fa fa-github"></i>
-    </a>
+            <a><i class="fab fa-facebook mx-3 fa-lg"></i></a>
 
-    <hr>
+            <a><i class="fab fa-twitter mx-3 fa-lg"></i></a>
 
-    <!-- Terms of service -->
-    <p>By clicking
-        <em>Sign up</em> you agree to our
-        <a href="" target="_blank">terms of service</a> and
-        <a href="" target="_blank">terms of service</a>. </p>
+            <a><i class="fab fa-linkedin mx-3 fa-lg"></i></a>
 
-</form>
-<!-- Default form register -->
+            <a><i class="fab fa-github mx-3 fa-lg"></i></a>
+
+            <hr>
+
+            <!-- Terms of service -->
+            <p>By clicking
+              <em>Sign up</em> you agree to our
+              <a href="" target="_blank">terms of service</a> and
+              <a href="" target="_blank">terms of service</a>. </p>
+
+          </form>
+          <!-- Default form register -->
         </div>
       </div>
     </div>
   </div>
   <!-- Registration Modal -->
-  
+
 
   <!--Main Layout-->
-  <main class="text-center py-5">
 
+  <!-- Section: Features v.2 -->
+  <section class="my-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
 
-          <p align="justify">The Read-a-Thon is a fun and rewarding way for students to show their support for (enter
-            school name/organization). Proceeds from the Read-a-thon support family events, our teachers, their
-            classrooms, and most importantly, our students.</p>
+      <!-- Section heading -->
+      <h2 class="h1-responsive font-weight-bold text-center my-5">What is a Read-A-Thon?</h2>
+      <!-- Section description -->
+      <p class="lead grey-text text-center w-responsive mx-auto mb-5">The Read-a-Thon is a fun and rewarding way for
+        students to show their support for (enter school
+        name/organization). Proceeds from the Read-a-thon support family events, our teachers, their classrooms, and
+        most importantly, our students.</p>
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-5">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+
+              <div class="card profile-card">
+                <div class="card-img-block">
+                  <img class="card-img-top" src="/img/bookshelf.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body pt-0">
+                  <h5 class="card-title">Who Can Participate?</h5>
+                  <p class="card-text">We all can! Elementary-age students in your district will be registering,
+                    setting reading goals, soliciting
+                    pledges and tracking their progress. Adults can be involved as sponsors, donors, and mentors. All
+                    reading
+                    levels are encouraged to participate! </p>
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
 
         </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-5">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+
+              <div class="card profile-card">
+                <div class="card-img-block">
+                  <img class="card-img-top" src="/img/readingSeated.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body pt-0">
+                  <h5 class="card-title">How Does it Work?</h5>
+                  <p class="card-text">Participating students will track how many books and hours they read each day.
+                    They will solicit pledges
+                    from friends and family to donate a certain amount per number of hours read. The proceeds will go
+                    to (enter
+                    school name/organization) to help fund special events, buy classroom materials, and further support
+                    our
+                    classroom and teachers.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-5">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+
+              <div class="card profile-card">
+                <div class="card-img-block">
+                  <img class="card-img-top" src="/img/readingBookshelf.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body pt-0">
+                  <h5 class="card-title">When Does it Start?</h5>
+                  <p class="card-text">Very soon! The 2019 Read-a-Thon is begins March 8th and ends March 12th, but you
+                    can always
+                    get in touch to organize an event for your organization.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Grid column -->
+      </div>
+    </div>
+  </section>
+  <!-- Section: Features v.2 -->
+
+
+  <main class="text-center py-5">
+
+    <div class="container container-fluid" id="aboutBody">
+      <div id="sampleText">
+        <h2><strong>What is the Read-a-Thon?</strong></h2>
+        <p>The Read-a-Thon is a fun and rewarding way for students to show their support for (enter school
+          name/organization). Proceeds from the Read-a-thon support family events, our teachers, their classrooms, and
+          most importantly, our students. </p>
+      </div>
+      <div id="sampleText">
+        <h2><strong>Who Can Participate?</strong></h2>
+        <p> We all can! Elementary-age students in your district will be registering, setting reading goals, soliciting
+          pledges and tracking their progress. Adults can be involved as sponsors, donors, and mentors. All reading
+          levels are encouraged to participate! </p>
+      </div>
+      <div id="sampleText">
+        <h2><strong>How Does it Work?</strong></h2>
+        <p>Participating students will track how many books and hours they read each day. They will solicit pledges
+          from friends and family to donate a certain amount per number of hours read. The proceeds will go to (enter
+          school name/organization) to help fund special events, buy classroom materials, and further support our
+          classroom and teachers.</p>
+      </div>
+      <div id="sampleText">
+        <h2><strong>When Does it Start?</strong></h2>
+        <p>The 2019 Read-a-Thon is begins March 8th and ends March 12th</p>
       </div>
     </div>
 
